@@ -24,4 +24,6 @@ def add_product(name, price, desc, img):
     c.execute("INSERT INTO products (name, price, description, image_url) VALUES (?,?,?,?)", 
               (name, price, desc, img))
     conn.commit()
+
     conn.close()
+    
